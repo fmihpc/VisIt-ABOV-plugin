@@ -10,14 +10,14 @@ You will require a recent version of
 writing, VisIt 2.8 and 2.9 have been tested to work with this plugin.
 
 In the abov plugin folder, you will need to run
-```/path/to/visit/bin xml2cmake ABOV.xml```
+```/path/to/visit/bin/xml2cmake ABOV.xml```
 to create build files.
 
 You can then build the plugin by running
 ```cmake . && make```
 
 If you get errors about incompatible cmake versions, you can try editing the
-version requirement at the top of CmakeLists.txt (although the cleaner way
+version requirement at the top of CMakeLists.txt (although the cleaner way
 would be to make sure that your cmake version at least matches the one that
 your visit installation was built with).
 
@@ -25,7 +25,7 @@ The plugin will automatically be placed into the current user's VisIt plugin dir
 
 # File Format
 
-The header format is identical to VisIts own [BOV Format](https://wci.llnl.gov/codes/visit/2.0.0/GettingDataIntoVisIt2.0.0.pdf),
+The header format is identical to VisIt's own [BOV Format](https://wci.llnl.gov/codes/visit/2.0.0/GettingDataIntoVisIt2.0.0.pdf),
 followed by arbitrarily-formated ascii data of the corresponding size. The
 ascii data is simply read using `scanf()`, so any whitespace between them is permissible.
 
