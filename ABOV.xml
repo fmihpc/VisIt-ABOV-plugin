@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+  <Plugin name="ABOV" type="database" label="ABOV" version="1.0" enabled="true" mdspecificcode="false" onlyengine="false" noengine="false" dbtype="STMD" haswriter="false" hasoptions="false">
+    <LIBS>
+      ${vtkzlib_LIBRARIES}
+    </LIBS>
+    <FilePatterns>
+      *.abov
+    </FilePatterns>
+    <Attribute name="" purpose="" persistent="false" exportAPI="" exportInclude="">
+    </Attribute>
+  </Plugin>
